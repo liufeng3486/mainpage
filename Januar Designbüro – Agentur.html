@@ -873,7 +873,7 @@ div.referenzen_item_inner {
 }
 
 .toggle_nav_outer_container {
-  padding: 10px;
+  padding: -5px;
   position: fixed;
   cursor: pointer;
   z-index: 99999;
@@ -882,7 +882,7 @@ div.referenzen_item_inner {
 .toggle_nav_outer_container .nav_toggle_icon:not(.mobile .nav_toggle_icon):hover > div {
   background-color: #fe4302 !important;
 }
-.toggle_nav_outer_container .nav_toggle_icon.black .bar_top_left, .toggle_nav_outer_container .nav_toggle_icon.black .bar_top_right, .toggle_nav_outer_container .nav_toggle_icon.black .bar_mid_left, .toggle_nav_outer_container .nav_toggle_icon.black .bar_mid_right, .toggle_nav_outer_container .nav_toggle_icon.black .bar_bot_left, .toggle_nav_outer_container .nav_toggle_icon.black .bar_bot_right {
+.toggle_nav_outer_container .nav_toggle_icon.white .bar_top_left, .toggle_nav_outer_container .nav_toggle_icon.black .bar_top_right, .toggle_nav_outer_container .nav_toggle_icon.black .bar_mid_left, .toggle_nav_outer_container .nav_toggle_icon.black .bar_mid_right, .toggle_nav_outer_container .nav_toggle_icon.black .bar_bot_left, .toggle_nav_outer_container .nav_toggle_icon.black .bar_bot_right {
   background-color: #262626;
 }
 .toggle_nav_outer_container .nav_toggle_icon.white .bar_top_left, .toggle_nav_outer_container .nav_toggle_icon.white .bar_top_right, .toggle_nav_outer_container .nav_toggle_icon.white .bar_mid_left, .toggle_nav_outer_container .nav_toggle_icon.white .bar_mid_right, .toggle_nav_outer_container .nav_toggle_icon.white .bar_bot_left, .toggle_nav_outer_container .nav_toggle_icon.white .bar_bot_right {
@@ -2843,9 +2843,9 @@ a.leist_port_item:hover p {
     top: -123px !important;
   }
 }
-@media screen and (min-width: 300px) {
+@media screen and (min-width: 200px) {
   .full_width_weighted {
-    width: 100%;
+    width: 75%;
   }
 }
 @media only screen and (min-width: 300px) and (orientation: portrait) {
@@ -5199,8 +5199,13 @@ a.leist_port_item:hover p {
 
 <div class="navcontainer">
 		<nav class="mainnav">
-		<ul id="menu-hauptmenu" class="menu"><li id="menu-item-150" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-145 current_page_item menu-item-150" style="text-align: center;"><a href="https://www.januar.ch/agentur/" >去论坛</a></li>
-<li id="menu-item-28" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28"><a href="https://www.januar.ch/leistungen/"><img class="full_width_weighted" src="./logo/erwm2.jpg" alt=""></a></li>
+		<ul id="menu-hauptmenu" class="menu">
+			<li id="menu-item-150" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-145 current_page_item menu-item-150" style="text-align: center;">
+				<a href="">请关注我们</a>
+			</li>
+		<img class="full_width_weighted" src="./logo/erwm2.jpg" alt="" style="text-align: center;margin: 0 auto;display: block">
+
+
 <!-- <li id="menu-item-27" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27"><a href="https://www.januar.ch/portfolio/"></a>222</li>
 <li id="menu-item-3880" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3880"><a href="https://www.januar.ch/blog/">Journal</a></li>
 <li id="menu-item-31" class="trigger_kontakt menu-item menu-item-type-custom menu-item-object-custom menu-item-31"><a href="https://www.januar.ch/agentur/#">Kontakt</a></li> -->
@@ -5250,33 +5255,65 @@ a.leist_port_item:hover p {
 	<div class="toggle_nav_container">
 		<div class="nav_toggle_icon burger">
 
-			<div class="bar bar_top_left" style="background-color: black;"></div>
-			<div class="bar bar_top_right" style="background-color: black;"></div>
+			<div class="bar bar_top_left" style="background-color: white;"></div>
+			<div class="bar bar_top_right" style="background-color: white;"></div>
 
-			<div class="bar bar_mid_left" style="background-color: black;"></div>
-			<div class="bar bar_mid_right" style="background-color: black;"></div>
+			<div class="bar bar_mid_left" style="background-color: white;"></div>
+			<div class="bar bar_mid_right" style="background-color: white;"></div>
 
-			<div class="bar bar_bot_left" style="background-color: black;"></div>
-			<div class="bar bar_bot_right" style="background-color: black;"></div>
+			<div class="bar bar_bot_left" style="background-color: white;"></div>
+			<div class="bar bar_bot_right" style="background-color: white;"></div>
 
 		</div>
 	</div>
 </div>
 
 
+  <link rel="shortcut icon" href="http://www1.landawang.com/assets/images/gt_favicon.png">
+  
+  <link rel="stylesheet" href="http://www1.landawang.com/assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://www1.landawang.com/assets/css/font-awesome.min.css">
 
 	
-	<header class="header designbureau">
+	<header class="header designbureau" style='position:fixed; z-index:999; top:0;'>
+<div class="navbar navbar-inverse navbar-fixed-top headroom" >
+    <div class="container">
+      <div class="navbar-header">
+        <!-- Button for smallest screens -->
+        <!--<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>-->
+        <a class="navbar-brand" href="index.html"><img src="./logo/text1.png" alt="Progressus HTML5 template"></a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav pull-right">
+          <div class="toggle_nav_outer_container" style="position: fixed; top: 30px;">
+  <div class="toggle_nav_container">
+    <div class="nav_toggle_icon burger">
+
+      <div class="bar bar_top_left" style="background-color: white;"></div>
+      <div class="bar bar_top_right" style="background-color: white;"></div>
+
+      <div class="bar bar_mid_left" style="background-color: white;"></div>
+      <div class="bar bar_mid_right" style="background-color: white;"></div>
+
+      <div class="bar bar_bot_left" style="background-color: white;"></div>
+      <div class="bar bar_bot_right" style="background-color: white;"></div>
+
+    </div>
+  </div>
+</div>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
 
     
-	<!-- 	<h1 class="is_link">蓝象人<div id="logo"><img src="./logo/logo.png" style="
+	<!-- 	<h1 class="is_link">蓝向人<div id="logo"><img src="./logo/logo.png" style="
     width: 100px;
 "></div></h1> -->
 
-<img src="./logo/erwm.jpg" style="
+<!-- <img src="./logo/erwm.png" style="
     width: 150px;margin-left: 20px
 ">
-<h3 class="is_link" style="margin-left: 50px">蓝象集团</h3>
+<h3 class="is_link" style="margin-left: 50px">蓝向集团</h3> -->
 
 
 		
@@ -5298,15 +5335,22 @@ a.leist_port_item:hover p {
 
 				<div class="abstand100"></div>
 <div class="headline">
-蓝领的导航员：蓝象人</div>
+职场灵魂布道师：蓝向人</div>
 <div class="abstand145 visible_tablet_and_desktop"></div>
-<div class="left_column">关注我们，<br>获得的不是工作，<br>是更好的生活。</div><section class="right_column">
-<p>提升蓝领的技能<br>拓宽蓝领的生活圈，工作圈
-<br>完整的蓝领生态圈，增加蓝领的生活质量
+<div class="left_column">关注我们，
+  <br>获得的不是工作，
+  <br>是更好的生活。
+<br>为您定制个性化的能力提升道路
+<br>为您展现三年后您的样子
+</div>
+<section class="right_column">
+<p>提升你们的技能<br>拓宽你们的生活圈，工作圈
+<br>完整的生态圈，增加生活质量
 <br>极广的岗位资源,可以通过我们找到合适的岗位
+
 </p>
 <p>关注我们，让我们关注你的未来</p>
-<p><a href="http://www.januar.ch/leistungen/">点击去往>>蓝象人论坛</a></p></section>
+<p><a href="http://www.januar.ch/leistungen/">↓↓↓关注我们</a></p></section>
 
 			</article>
 		</section>
